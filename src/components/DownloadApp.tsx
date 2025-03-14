@@ -20,7 +20,7 @@ const DownloadApp: React.FC = () => {
             {/* App Images */}
             <div className="w-full md:w-1/2 flex justify-center md:justify-start">
               <img
-                src="/src/assets/DownloadApp_img.png"
+                src="/assets/DownloadApp_img.png"
                 alt="BHIVE Workspace App"
                 className="w-full max-w-[280px] md:max-w-[350px] h-auto"
               />
@@ -37,14 +37,14 @@ const DownloadApp: React.FC = () => {
               <div className="flex justify-center md:justify-start gap-4 mt-4">
                 <a href="#" target="_blank" rel="noopener noreferrer">
                   <img
-                    src="/src/assets/Playstore_img.png"
+                    src="/assets/Playstore_img.png"
                     alt="Google Play"
                     className="h-[40px] w-auto"
                   />
                 </a>
                 <a href="#" target="_blank" rel="noopener noreferrer">
                   <img
-                    src="/src/assets/Appstore-Img.png"
+                    src="/assets/Appstore-Img.png"
                     alt="App Store"
                     className="h-[40px] w-auto"
                   />
@@ -57,7 +57,7 @@ const DownloadApp: React.FC = () => {
         {/* Mobile Layout (Without White Card) */}
         <div className="md:hidden flex flex-col items-center gap-6">
           <img
-            src="/src/assets/DownloadApp_img.png"
+            src="/assets/DownloadApp_img.png"
             alt="BHIVE Workspace App"
             className="w-full max-w-[280px] h-auto"
           />
@@ -68,14 +68,14 @@ const DownloadApp: React.FC = () => {
           <div className="flex justify-center gap-4">
             <a href="#" target="_blank" rel="noopener noreferrer">
               <img
-                src="/src/assets/Playstore_img.png"
+                src="/assets/Playstore_img.png"
                 alt="Google Play"
                 className="h-[40px] w-auto"
               />
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
               <img
-                src="/src/assets/Appstore-Img.png"
+                src="/assets/Appstore-Img.png"
                 alt="App Store"
                 className="h-[40px] w-auto"
               />

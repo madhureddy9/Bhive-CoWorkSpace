@@ -24,22 +24,29 @@ const features = [
 
 const Features: React.FC = () => {
   return (
-    <section className="py-10 bg-[#F8F9FB] px-6 md:px-12 lg:px-10 xl:px-22 2xl:px-30 3xl:px-50">
+    <section className="py-10 bg-[#F8F9FB] px-6 md:px-12 lg:px-10 xl:px-22">
       {/* Feature Heading */}
-      <h2 className="text-left text-2xl font-bold mb-6 max-w-7xl mx-auto flex items-center gap-30">
+      <h2 className="text-left md:pl-2 text-2xl md:text-2xl lg:text-2xl font-bold mb-6 max-w-7xl mx-auto flex items-center gap-30">
         <span>Why Choose Us?</span>
         <FiArrowRight className="lg:hidden md:hidden text-[#FFBB00] text-2xl" />
       </h2>
 
       {/* Responsive Grid Layout */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-0 max-w-7xl mx-auto">
         {features.map((feature, index) => (
           <div
             key={index}
-            className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-3 p-4 bg-white shadow-md rounded-lg"
+            className={`flex flex-col items-center justify-center text-center p-3 md:p-4
+            bg-[#F8F9FB] rounded-lg shadow-md md:shadow-none md:rounded-none 
+            ${index % 4 !== 3 ? "md:border-r border-gray-300" : ""} 
+            ${index < 4 ? "md:border-b border-gray-300" : ""}`}
           >
-            <span className="text-[#FFBB00] text-2xl">{feature.icon}</span>
-            <p className="text-lg">{feature.text}</p>
+            <span className="text-[#FFBB00] text-2xl md:text-2xl lg:text-3xl">
+              {feature.icon}
+            </span>
+            <p className="text-sm md:text-base lg:text-lg xl:text-xl truncate w-full">
+              {feature.text}
+            </p>
           </div>
         ))}
       </div>

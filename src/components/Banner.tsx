@@ -5,22 +5,21 @@ const Banner: React.FC = () => {
     <section
       className="relative bg-cover bg-center bg-no-repeat px-4 py-16"
       style={{
-        backgroundImage: `url('/src/assets/bg-image.png'), url('/src/assets/Vector 6.png')`,
+        backgroundImage: `url('/assets/bg-image.png'), url('/assets/Vector 6.png')`,
         backgroundPosition: "center, top 40px",
-        // backgroundSize: "80%, 100px", // Reducing bg-image size
         backgroundRepeat: "no-repeat, no-repeat",
       }}
     >
       {/* Vector 6 explicitly positioned for testing */}
       <img
-        src="/src/assets/Vector 6.png"
+        src="/assets/Vector 6.png"
         alt="Vector 6 Illustration"
         className="absolute left-13 top-10 opacity-100 z-10"
       />
 
       {/* Vector 7 Positioned in Foreground */}
       <img
-        src="/src/assets/Vector 7.png"
+        src="/assets/Vector 7.png"
         alt="Vector 7 Illustration"
         className="absolute right-0 top-0 w-2/5 md:w-1/3 lg:w-1/3 opacity-80"
       />
@@ -42,7 +41,7 @@ const Banner: React.FC = () => {
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="relative w-full md:max-w-md bg-[#F8F9FB] rounded-lg shadow-md p-2">
             <video
-              src="/src/assets/Bhive.mp4"
+              src="/assets/Bhive.mp4"
               autoPlay
               loop
               muted

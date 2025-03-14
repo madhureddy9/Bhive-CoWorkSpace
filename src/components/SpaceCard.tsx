@@ -57,7 +57,7 @@ const SpaceCard: React.FC<SpaceCardProps> = ({
       {is_day_pass_enabled && (
         <div className="flex flex-row justify-between mt-4 gap-2">
           {/* Day Pass */}
-          <div className="flex-1 p-3 rounded-md bg-white shadow-md flex items-center justify-between">
+          <div className="flex-1 p-3 rounded-md bg-[#F9F9F9] shadow-md flex items-center justify-between">
             <div>
               <p className="text-gray-500 text-sm">Day Pass</p>
               <p className="text-lg font-semibold text-black">
